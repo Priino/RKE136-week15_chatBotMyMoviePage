@@ -86,7 +86,7 @@ app.post('/getmovie', (req, res) => {
 			: '';
 
 	const reqUrl = encodeURI(
-		`http://www.omdbapi.com/?t=${movieToSearch}&apikey=8c7979b`
+		`http://www.omdbapi.com/?t=${movieToSearch}&apikey=cc6f9dib`
 	);
 	http.get(
 		reqUrl,
