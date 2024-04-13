@@ -97,12 +97,12 @@ app.post('/getmovie', (req, res) => {
 			})
 			responseFromAPI.on('end', () => {
 				const movie = JSON.parse(completeResponse);
-                if (!movie || !movie.Title) {
+               /*if (!movie || !movie.Title) {
                     return res.json({
                         fulfillmentText: 'Sorry, we could not find the movie you are asking for.',
                         source: 'getmovie'
                     });
-                }
+                }*/
 
 				let dataToSend = movieToSearch;
 				dataToSend = `${movie.Title} was released in the year ${movie.Year}. It is directed by ${
