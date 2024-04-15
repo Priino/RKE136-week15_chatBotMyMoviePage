@@ -80,6 +80,8 @@ app.post('/search', (req, res) => {
 
 
 app.post('/getmovie', (req, res) => {
+
+    console.log(req.body.queryResult.parameters.movie);
 	const movieToSearch =
 		req.body.queryResult && req.body.queryResult.parameters && req.body.queryResult.parameters.movie
 			? req.body.queryResult.parameters.movie
